@@ -1,0 +1,48 @@
+/* .cardNavbar{
+  right: -250px;
+} */
+
+@media (max-width: 520px) { 
+  /* body{
+        overflow-x: hidden;
+    } */
+  .Home {
+    width: 100%;
+    margin: auto;
+  }
+  .main-span {
+    width: 100%;
+  }
+  .paragraph {
+    width: 100%;
+  }
+
+  /* .img-section{
+    margin-left: 20px;
+  } */
+}
+
+@media (max-width: 770px) {
+  .Home {
+    width: 100%;
+    margin: 0;
+  }
+  .main-span {
+    width: 80%;
+  }
+  .paragraph {
+    width: 80%;
+  }
+  .img-section {
+    /* margin-right: 40px; */
+  }
+}
+
+@media (max-width: 421px){
+    .Home{
+        width: 100%;
+    }
+}
+
+
+
