@@ -4,7 +4,7 @@ import { IoHomeSharp } from "react-icons/io5";
 import { FaUserGraduate } from "react-icons/fa6";
 import { FaFileCode } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
-import { useTheme } from "../../context/themeContext";
+import { useTheme } from "../../context/ThemeContext";
 
 const Navbar = () => {
   const [active, setActive] = useState("home");
