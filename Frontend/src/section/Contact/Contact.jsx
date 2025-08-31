@@ -23,7 +23,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post('https://portfoliopawanmern-backend.onrender.com/api/contact', formData);
+      const res = await axios.post('https://myportfolio-wisf.onrender.com/api/contact', formData);
       alert('✅ Message Sent Successfully');
       setFormData({ name: '', email: '', subject: '', message: '' }); 
     } catch (err) {
