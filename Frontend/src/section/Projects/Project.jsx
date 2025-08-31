@@ -3,7 +3,7 @@ import axios from "axios";
 import FinanceProject from "../../assets/images/FinanceProject.png";
 import FoodDelivery from "../../assets/images/FoodDelivery.png";
 import "./Project.css";
-import { useTheme } from "../../context/themeContext";
+import { useTheme } from "../../context/ThemeContext";
 
 const Project = () => {
   const {theme} = useTheme();
