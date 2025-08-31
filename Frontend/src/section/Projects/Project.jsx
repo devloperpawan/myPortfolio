@@ -14,7 +14,7 @@ const Project = () => {
 
   const fetchProjects = async () => {
     try {
-      const res = await axios.get("https://portfoliopawanmern-backend.onrender.com/api/project");
+      const res = await axios.get("https://myportfolio-wisf.onrender.com/api/project");
       setProjects(res.data);
     } catch (err) {
       console.error("Fetching Error", err);
@@ -37,7 +37,7 @@ const Project = () => {
           >
             <img
               className="w-full h-48 object-cover"
-              src={`https://portfoliopawanmern-backend.onrender.com/uploads/${project.image}`}
+              src={`https://myportfolio-wisf.onrender.com/uploads/${project.image}`}
               alt={project.name}
             />
             <div className="px-6 py-4">
@@ -50,38 +50,6 @@ const Project = () => {
             </div>
           </div>
         ))}
-        {/* <div className="w-full sm:w-[400px] rounded overflow-hidden shadow-lg m-5">
-        <img
-          className="w-full"
-          src={FinanceProject}
-          alt="Personal Finance Dashboard"
-        />
-        <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2 text-gray-900">
-            Personal Finance Dashboard
-          </div>
-          <p className="text-gray-700 md:text-lg text-sm">
-            A dashboard that tracks income, expenses, savings, and investments with charts, budget planning, and real-time insights.
-          </p>
-        </div>
-      </div> */}
-
-        {/* Card 2 */}
-        {/* <div className="w-full sm:w-[400px] rounded overflow-hidden shadow-lg m-5">
-        <img
-          className="w-full"
-          src={FoodDelivery}
-          alt="Food Delivery Website"
-        />
-        <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2 text-gray-900">
-            Food Delivery Website
-          </div>
-          <p className="text-gray-700 md:text-lg text-sm">
-            A responsive food delivery website built with React, featuring menu display, smooth navigation, and clean UI.
-          </p>
-        </div>
-      </div> */}
       </div>
     </div>
   );
