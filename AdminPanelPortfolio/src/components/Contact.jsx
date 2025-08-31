@@ -12,7 +12,7 @@ const Contact = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/contact", {
+        const res = await axios.get("https://myportfolio-wisf.onrender.com/api/contact", {
           headers: {
             Authorization: `Bearer ${token}`, // remove if not needed
           },
@@ -35,7 +35,7 @@ const Contact = () => {
     if (!confirm) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/contact/${id}`, {
+      await axios.delete(`https://myportfolio-wisf.onrender.com/api/contact/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`, // remove if not needed
         },
