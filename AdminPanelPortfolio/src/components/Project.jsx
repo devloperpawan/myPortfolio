@@ -19,7 +19,7 @@ const Project = () => {
   const fetchProjects = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("http://localhost:5000/api/project");
+      const res = await axios.get("https://myportfolio-wisf.onrender.com/api/project");
       setProjects(res.data);
       setLoading(false);
     } catch (err) {
@@ -37,7 +37,7 @@ const Project = () => {
     formData.append("image", image);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/project", formData, {
+      const res = await axios.post("https://myportfolio-wisf.onrender.com/api/project", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${token}`,
@@ -61,7 +61,7 @@ const Project = () => {
     if (!confirm) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/project/${id}`);
+      await axios.delete(`https://myportfolio-wisf.onrender.com/api/project/${id}`);
       alert("Project deleted!");
       setProjects((prev) => prev.filter((p) => p._id !== id));
     } catch (err) {
@@ -130,7 +130,7 @@ const Project = () => {
             {projects.map((project) => (
               <div key={project._id} className="border border-gray-200 p-4 rounded relative bg-gray-50">
                 <img
-                  src={`http://localhost:5000/uploads/${project.image}`}
+                  src={`https://myportfolio-wisf.onrender.com/uploads/${project.image}`}
                   alt={project.name}
                   className="w-full h-40 object-cover rounded mb-2"
                 />
