@@ -1,7 +1,7 @@
 import "./App.css";
 // import { ThemeProvider } from "./context/themeContext";
 import Navbar from "./components/Navbar/Navbar";
-import { useTheme } from "./context/themeContext";
+import { useTheme } from "./context/ThemeContext";
 import About from "./section/About/About";
 import Contact from "./section/Contact/Contact";
 import Footer from "./section/footer/Footer";
