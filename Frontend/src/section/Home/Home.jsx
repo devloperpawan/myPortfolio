@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Person from "../../assets/images/PawanSi.png";
 import "./Home.css";
-import { useTheme } from "../../context/themeContext";
+import { useTheme } from "../../context/ThemeContext";
 
 const Home = () => {
   const { theme, toogleTheme } = useTheme(); // ✅ Get theme toggle function
