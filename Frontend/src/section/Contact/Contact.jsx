@@ -3,7 +3,7 @@ import axios from 'axios'; // 👈 install this if not done
 import location from '../../assets/logo/location.png';
 import contact from '../../assets/logo/mail.png';
 import './Contact.css';
-import { useTheme } from '../../context/themeContext';
+import { useTheme } from '../../context/ThemeContext';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
